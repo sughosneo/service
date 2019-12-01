@@ -48,7 +48,7 @@ Once you run the client you would notice below output.
 
 ![client ouput](./images/client_output.png)
 
-***```With inbuilt wsgiref httpserver itself ```***
+***```With wsgiref http simple server ```***
 --------------------------------------------
 
 We are not creating one separate Dockerfile for this direct service to test. We would directly get into the container and 
