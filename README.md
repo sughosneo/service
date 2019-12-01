@@ -67,7 +67,7 @@ Then you would require to change the configuration of the ***client.py***
 
 You would notice carefully the time this default web server is taking to process those 100 request. It's much slower than the previous one.
 
-***```Conclusion```****
+***```Conclusion```***
 -------------------
 
 Both the scenarios server was processing the request synchronously. But in the gunicorn approach it actually generates few of the work threads to process the incoming request 
