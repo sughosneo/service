@@ -61,7 +61,7 @@ then run the InfoSvc.py
     python3 InfoSvc.py
 ```
 
-Then you would require to change the configuration of the ***client.py***
+Then you would require to change the configuration of the ***client.py*** as by default with simple http server it runs on ***port 5000***.
 
 ![service side ouput](./images/dev_service_ouput.png)
 
