@@ -13,10 +13,7 @@ jobs:
     - name: BUILD SERVICE DOCKER IMAGE WITH V1.0
       run: docker build . --file Dockerfile --tag service:1.0
     - name: LOGIN TO DOCKER HUB
-      env:
-        DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
-        DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+      run: docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_PASSWORD }}
     - name: PUSH DOCKER IMAGE TO DOCKER HUB
-      run : docker push service:1.0
-
+      run : docker push ${{ secrets.DOCKER_HUB_USERNAME }}/service:1.0
 
