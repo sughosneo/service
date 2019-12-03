@@ -32,6 +32,7 @@ app.add_route("/info", infoResouceObj)
 
 if __name__ == "__main__":
     httpd = simple_server.make_server('0.0.0.0', 5000, app)
+    print("Info service would be running as per below.")
     print(Util.getLogTimeStamp(), "Info api has been started and listening on http://0.0.0.0:5000/info")
 
     httpd.serve_forever()
