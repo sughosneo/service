@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1.0
+    - uses: actions/checkout@v1
     - name: BUILD SERVICE DOCKER IMAGE WITH V1.0
       run: docker build . --file Dockerfile --tag service:1.0
     - name: LOGIN TO DOCKER HUB
