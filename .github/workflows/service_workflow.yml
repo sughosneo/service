@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: CHECKING OUT THE BRANCH CODE FOR FURTHER BUILD
     - uses: actions/checkout@v1
     - name: BUILD SERVICE DOCKER IMAGE WITH V1.0
       run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_HUB_USERNAME }}/service:1.0
