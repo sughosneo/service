@@ -15,8 +15,8 @@ jobs:
     - name: LOGIN TO DOCKER HUB
       run : docker login
       env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+        DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
     - name: PUSH DOCKER IMAGE TO DOCKER HUB
       run : docker push service:1.0
 
