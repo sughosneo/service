@@ -19,5 +19,6 @@ jobs:
         DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
     - name: PUSH DOCKER IMAGE TO DOCKER HUB
     - uses: actions/docker/cli@master
-      args : docker push service:1.0
+      with:
+      args : push service:1.0
 
